@@ -4,6 +4,7 @@ A header only library for timing blocks of code in the C language
 
 Example usage
 ````C
+#include <stdio.h>
 #include "timer.h"
 
 int main()
@@ -16,4 +17,3 @@ int main()
   printf("Cpu Time: %.6f\n", t.cpu_time_taken);
   return 0;
 }
-```
