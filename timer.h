@@ -22,7 +22,7 @@ void timer_start(Timer* t)
            (long)(t->timecheck.tv_usec) / 1000;
 }
 
-void timer_start(Timer* t)
+void timer_stop(Timer* t)
 {
     t->cpu_time_taken = ((double) (clock() - t->c_t) / CLOCKS_PER_SEC);
     gettimeofday(&(t->timecheck), NULL);
